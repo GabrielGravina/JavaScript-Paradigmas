@@ -33,6 +33,7 @@ console.log('Hello World!');
 }
 helloWorld();
 \end{lstlisting}
+No JavaScript o uso de vírgulas é opcional.
  
 
 
@@ -47,15 +48,20 @@ helloWorld();
     %%%%%%%%=================================
     \section{Vari\'{a}veis e constantes}
     %%%%%%%%=================================
-	\subsection{Literals}
+    Uma variável é, de forma resumida, um nome simbólico para um valor armazenado no computador. Quando chamamos uma variável, estamos acessando o valor guardado por ela. \newline
+    Na linguagem JavaScript, existem dois tipos de variáveis: as primitivas e as de objeto. 
+    
+    \subsection{Tipos Primitivos}
+    
+	Os tipos primitivos do JS incluem números, strings de textos e valores booleanos (true e false).
+	Os tipos especiais null e undefined são valores primitivos, porém não são números, strings ou booleanos. Cada um é considerado membro de um tipo especial.  
+	\subsubsection{Números}
+	%TALVEZ Desconsiderar essa subsection
+	\subsection{Tipos de Objeto}
+	Na linguagem, qualquer valor que não seja um número, string, objeto ou null e undefined é um objeto. Um objeto é uma coleção de propriedades onde cda propriedade tem um nome e um valor.
 	
-	Um literal é um dado que aparece diretamente num programa. Exemplos:
-	\begin{lstlisting}[language=JavaScript]
-		5	  	//O numero 5
-		5.1		//O numero 5.1
-		"Ola"	//Uma string de texto
-		true	//Um valor booleano
-	\end{lstlisting}
+
+
     %%%%%%%%=================================
     \section{Tipos de Dados B\'{a}sicos}
     %%%%%%%%=================================

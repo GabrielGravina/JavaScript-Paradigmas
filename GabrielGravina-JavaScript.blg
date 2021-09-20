@@ -5,9 +5,16 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 14 items.
 Database file #1: JavaScriptBib.bib
+Warning--I didn't find a database entry for "Scott2021"
+Warning--I didn't find a database entry for "Flanagan2020"
+Warning--I didn't find a database entry for "Scott2020"
+Warning--I didn't find a database entry for "Morgan2018"
+Warning--I didn't find a database entry for "seb11"
+Warning--I didn't find a database entry for "roy04"
+Warning--I didn't find a database entry for "wat90"
 You've used 2 entries,
             2543 wiz_defined-function locations,
-            568 strings with 4717 characters,
+            579 strings with 4812 characters,
 and the built_in function-call counts, 570 in all, are:
 = -- 48
 > -- 16
@@ -46,3 +53,4 @@ warning$ -- 0
 while$ -- 4
 width$ -- 3
 write$ -- 28
+(There were 7 warnings)
