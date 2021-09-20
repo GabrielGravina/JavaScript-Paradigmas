@@ -1,0 +1,14 @@
+\begin{thebibliography}{Pow15}
+
+\bibitem[Fla20]{flanagan2020javascript}
+David Flanagan.
+\newblock {\em JavaScript : the definitive guide : master the world's most-used
+  programming language}.
+\newblock O'Reilly Media, Sebastopol, CA, 2020.
+
+\bibitem[Pow15]{powers2015javascript}
+Shelley Powers.
+\newblock {\em JavaScript cookbook : [programming the web}.
+\newblock O'Reilly Media, Sebastopol, CA, 2015.
+
+\end{thebibliography}
