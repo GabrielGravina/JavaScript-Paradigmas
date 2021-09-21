@@ -4,21 +4,15 @@
 % Disciplina: Paradigmas de Linguagens de Programa\c{c}\~{a}o
 
 
+
 \chapter{ Conceitos b\'{a}sicos da Linguagem JavaScript}
 
-Os livros b\'{a}sicos para recomendados o estudo da Linguagem JavaScript s\~{a}o: \cite{Scott2021}, \cite{Flanagan2020}, \cite{Scott2020} e \cite{Morgan2018}
+Os livros b\'{a}sicos para recomendados o estudo da Linguagem JavaScript s\~{a}o: \cite{Flanagan2020}, \cite{powers2015javascript} entre outros.
 
-Neste cap\'{\i}tulo \'{e} serão apresentados os principais conceitos da linguagem JavaScript, sua estrutura léxica e.
+Neste cap\'{\i}tulo \'{e} serão apresentados os principais conceitos da linguagem JavaScript, sua estrutura léxica, operadores, laços de repetição entre outros tópicos.
 
-Segundo \cite{seb11}, a linguagem JavaScript,  . . .
 
-De acordo com \cite{seb11} e \cite{roy04}, a linguagem JavaScript . . .
-
-\cite{seb11} afirma que a linguagem JavaScript . . .
-
-Considerando que a linguagem JavaScript (\cite{seb11}, \cite{wat90}) \'{e} considerada como ....
-
-%COLOCAR UMA SUBSECTION ESTRUTURA LÉXICA
+\section{Estrutura Léxica}
 A linguagem JavaScript é feita utilizando o set de caractéres Unicode, que dá suporte a praticamente todas as linguagens utilizadas
 atualmente no mundo. É uma linguagem case sensitive, ou seja, os nomes de variáveis, funções e outros identificadores devem ser sempre utilizados de maneira consistente, ao contrário do que acontece no html, por exemplo. %Necessário melhorar +/-
 Além disso, o JavaScript ignora os espaços e as quebras de linhas (com algumas exceções) que aparecem nos programas. Isso permite que os programas sejam identados de maneira que façam o código ser legível e fácil de entender.
@@ -46,10 +40,42 @@ No JavaScript o uso de vírgulas é opcional.
     \end{center}
    \end{figure} 
     %%%%%%%%=================================
+    \section{Operadores}
+    \begin{lstlisting}
+    ++								//incremento
+    --								//decremento
+    !								//inverte valores em booleano
+    ==								//testa equalidade
+    !=								//testa inequalidade
+    //testa por equalidade estrita, ou seja, o tipo tambem tem que ser o mesmo
+    ===	
+    ||								//OR
+    &&								//AND
+    =								//Atribui um valor a uma variavel
+    *=, /=, %=, +=...				//Faz uma atribuicao e um calculo
+    //Menor que, maior que, menor ou igual que, maior ou igual que
+    <, >, <=, >=
+    \end{lstlisting}
     \section{Vari\'{a}veis e constantes}
     %%%%%%%%=================================
-    Uma variável é, de forma resumida, um nome simbólico para um valor armazenado no computador. Quando chamamos uma variável, estamos acessando o valor guardado por ela. \newline
+    Com base no livro\cite{flanagan2020javascript}, uma variável é, de forma resumida, um nome simbólico para um valor armazenado no computador. Quando chamamos uma variável, estamos acessando o valor guardado por ela. \newline
     Na linguagem JavaScript, existem dois tipos de variáveis: as primitivas e as de objeto. 
+    Para se declarar uma variável no JavaScript é necessário utilizar a palavra reservada "var" seguida do nome da variável. Abaixo encontram-se exemplos da declaração de variáveis no JavaScript.
+    
+    \begin{lstlisting}
+    //E possivel declarar uma variavel vazia
+    var a;
+    var b = 100;
+    var name = "Lucas";
+    
+    //Tambem e possivel declarar multiplas variaveis numa so linha
+    var A = 0, B = 1, C = 2;
+    
+    //Variaveis tambem podem ser criadas dentro de lacos de repeticao
+    (for var i = 0; i<10; i++){
+    	console.log(i)
+    }
+    \end{lstlisting}
     
     \subsection{Tipos Primitivos}
     
@@ -57,139 +83,182 @@ No JavaScript o uso de vírgulas é opcional.
 	Os tipos especiais null e undefined são valores primitivos, porém não são números, strings ou booleanos. Cada um é considerado membro de um tipo especial.  
 	\subsubsection{Números}
 	%TALVEZ Desconsiderar essa subsection
-	\subsection{Tipos de Objeto}
-	Na linguagem, qualquer valor que não seja um número, string, objeto ou null e undefined é um objeto. Um objeto é uma coleção de propriedades onde cda propriedade tem um nome e um valor.
+	Uma distinção da linguagem JavaScript que é incomum em outras línguas é que não há distinção entre inteiros e floats, sendo todos os números representados como floats. 
+	A linguagem armazena os números utilizando o formato de floats de 64 bits, e pode armazenar números grandes com precisão.
 	
-
-
-    %%%%%%%%=================================
-    \section{Tipos de Dados B\'{a}sicos}
-    %%%%%%%%=================================
-
-     %%%........................
-            \subsection{String}
-     %%%........................
-            Um string \'{e} uma sequ\^{e}ncia de caracteres considerado como um item de dado simples. Para JavaScript, um string \'{e} um array de caracteres ou qualquer grupo de caracteres escritos entre doble aspas ou aspas simples. Por exemplo,
-    \begin{lstlisting}
-  <script type="text/javascript">
-    var rows = prompt("How many rows for your multiplication table?");
-    var cols = prompt("How many columns for your multiplication table?");
-    if(rows == "" || rows == null)
-   		 rows = 10;
-    if(cols== "" || cols== null)
-   		 cols = 10;
-    createTable(rows, cols);
-    function createTable(rows, cols)
-    {
-      var j=1;
-      var output = "<table border='1' width='500' cellspacing='0'cellpadding='5'>";
-      for(i=1;i<=rows;i++)
-      {
-    	output = output + "<tr>";
-        while(j<=cols)
-        {
-  		  output = output + "<td>" + i*j + "</td>";
-   		  j = j+1;
-   		}
-   		 output = output + "</tr>";
-   		 j = 1;
-    }
-    output = output + "</table>";
-    document.write(output);
-    }
-  </script>
-\end{lstlisting}
-
-
-
-
-     %%%%%%%%=================================
-    \section{Tipos de Dados de Cole\c{c}\~{a}o}
-    %%%%%%%%=================================
-
-
-     %%%........................
-            \subsection{Tipos Sequenciais}
-     %%%........................
-
-
-     %%%........................
-            \subsection{Tipos Conjunto}
-     %%%........................
-
-
-     %%%........................
-            \subsection{Tipos Mapeamento}
-     %%%........................
-
-
-
-
-    %%%%%%%%=================================
-    \section{Estrutura de Controle e Fun\c{c}\~{o}es}
-    %%%%%%%%=================================
-
-     %%%........................
-            \subsection{O comando IF}
-     %%%........................
-
-
-      %%%........................
-            \subsection{La\c{c}o FOR}
-     %%%........................
-
-     %%%........................
-            \subsection{La\c{c}o WHILE}
-     %%%........................
-
-
-    %%%%%%%%======================
-    \section{M\'{o}dulos e pacotes}
-    %%%%%%%%======================
-
-
-
-       %%%........................
-            \subsection{M\'{o}dulos}
-     %%%........................
-
-
-
-          %%%........................
-            \subsection{Pacotes}
-     %%%........................
-
-
-
-
-
-
-    C\'{o}digo fonte para a linguagem JavaScript:
-    \begin{lstlisting}
-        <!DOCTYPE html>
-        <html>
-        <body>
-
-        <h2>JavaScript Objects</h2>
-
-        <p id="demo"></p>
-
-        <script>
-        var person = {
-          firstName : "John",
-          lastName  : "Doe",
-          age     : 50,
-          eyeColor  : "blue"
-        };
-
-        document.getElementById("demo").innerHTML =
-        person.firstName + " is " + person.age + " years old.";
-        </script>
-
-        </body>
-        </html>
-    \end{lstlisting}
-
+	\subsubsection{Strings}
+	De acordo com \cite{flanagan2020javascript}, uma string é uma sequencia imutável de valores de 16 bits, onde cada um representa geralmente um caractere Unicode. O tamanho da string dependerá de quantos desses valores a string contém. Para incluir uma string num programa, basta colocar aspas (simples ou duplas). Exemplo:
+	
+	\begin{lstlisting}
+	//E uma string vazia
+	''
+	
+	"10.24"	
+	//Utilizacao da combinacao de aspas simples e duplas
+	'O numero "8" e par'				
+	
+	mensagemOla = "Ola, seja bem vindo" 
+	//Printa o conteudo da variavel no console do navegador
+	console.log(mensagemOla)	
+	
+	/*compara o valor da variavel e retorna true ou false. 
+	No caso, retornara true*/
+	a = "Ola"
+	a == "Ola"
+	
+	
+	\end{lstlisting}
+	
+	\subsubsection{Booleanos}
+	Conforme \cite{powers2015javascript}, um valor booleano é um valor que representa verdade ou falsidade, e só há dois possíveis valores para um booleano. No JavaScript, as palavras reservadas para os booleanos são "true" e "false", e são geralmenteo resultado de uma comparação. Exemplo:
+	
+	\begin{lstlisting}
+		a = 10
+		b = 3
+		a == b
+		false
+		
+		a == 10
+		true
+	\end{lstlisting}
+	\subsubsection{Tipos especiais}
+	Consoante a \cite{flanagan2020javascript} null é uma palavra reservada que geralmente indica ausência de um valor. Se utilizarmos o comando typeof no null, veremos que será retornado "object", o que significa que null é um objeto que indica a ausência de objeto. Resumindo, pode ser utilizado para indicar que não há valor em uma variável, string ou objeto. 
+	
+	Por isso, null e undefined costumam ser definidos como um único objeto do seu tipo.
+	
+	
+	\subsection{Tipos de Objeto}
+	Segundo \cite{flanagan2020javascript}, qualquer valor que não seja um número, string, objeto ou null e undefined é um objeto. Um objeto é uma coleção de propriedades onde cada propriedade tem um nome e um valor.
+	
+	\subsubsection{Globais}
+	Os objetos globais são objetos que podem ser usados globalmente em todo programa escrito em JavaScript. Quando um interpretador da linguagem inicia, ele cria novos objetos globais e os dá as propriedades que o definem. 
+	Exemplos de propriedades globais são: undefined, Infinity, NaN.
+	Exemplos de funções globais: 
+	\begin{lstlisting}
+	isNan()			  	//Retorna se um valor e um numero ou nao.
+	parseInt()		  //Recebe o conteudo de uma string e converte para. inteiro
+	parseFloat() 	  //Recebe uma string e a converte para float.
+	eval()	  		  //Avalia codigo representado por uma string.
+	isFinite()		  //Verifica se um numero e finito.
+	
+	\end{lstlisting}
+	Além de propriedades e funções globais, no JavaScript existem também constructor functions,como Date(), Object() e objetos globais, como o Math e JSON.
+	
+	
+	\section{Estrutura de Controle e Funções}
+	De acordo com \cite{flanagan2020javascript}, uma estrutura de controle dita a ordem em que instruções serão execudas. Estruturas muito conhecidas em outras linguagens estão presentes também no JavaScript.
+	
+	\subsection{O comando IF}
+	O comando IF funciona para fazer com que o JavaScript execute expressões condicionalmente. Isso significa que o computador somente executará uma determinada instrução caso a condição seja verdadeira ou execurará outra caso a condição seja falsa.
+	O comando if na linguagem toma a seguinte forma:
+	
+	\begin{lstlisting}
+		//Sintaxe
+		if(condicao){
+			//realiza instrucao A
+		}else{
+			//realiza outra instrucao
+		}
+		
+		//-----Exemplo-----
+		var nome = "Marcos"
+		
+		if(nome == Marcos){
+			console.log("Bem vindo, Marcos!")
+		}else{
+			console.log("Apenas Marcos pode ler esta mensagem!")
+		}
+	\end{lstlisting}
+	
+	É possível também utilizar IFs dentro de outros IFs, como no exemplo abaixo:
+	
+	\begin{lstlisting}
+	
+		if(animal == cachorro){
+			console.log("Um cachorro e um animal")
+			if(cachorro == panda){
+				console.log("Um panda e um cachorro)
+			}else{
+				console.log("Um panda nao e um cachorro")
+			}
+		}
+		
+	\end{lstlisting}
+	
+	\subsection{Laços de Repetição}
+	Laços de repetição executam uma instrução até que uma determinada condição seja verdadeira. Na linguagem JavaScript, os laços de repetição são o 'while', 'do ... while' e o 'for'.
+	\newline
+	\newline
+	
+	\subsubsection{While}
+	Os laços de repetição while tem a seguinte no JavaScript:
+	
+	\begin{lstlisting}
+		while(condicao == true){
+			execute...
+		}
+		
+		//O progrma abaixo conta de 0 a 999
+		vai i = 0;
+		
+		while(i < 1000){
+			console.log(i)
+			i++
+		}
+		
+	\end{lstlisting}
+	É importante que o laço while atinga em algum momento uma condição de saída. Caso contrário, o programa continuará executando indefinidamente. No exemplo abaixo, temos um programa sem condição de saída.
+	
+	\begin{lstlisting}
+		while(Bolsonaro == Horroroso){
+			console.log("O presidente e horroroso")
+		}
+	\end{lstlisting}
+	
+	\subsection{For}
+	
+	Geralmente, os laços que utilizam o for são mais simples de ser lido. Isso devido ao for poder executar uma variável inicial, testá-la e incrementála em uma só linha. Na linguagem, o laço for funciona com a seguinte sintaxe:
+	\begin{lstlisting}
+		for(inicia variavel; testa condicao; incrementa){
+			realiza instrucao
+		}
+	
+	 	//-------Exemplo-------
+	 	//O programa abaixo calcula fatoriais
+	 	var fatorial = 10;
+	 	var resultado = fatorial;
+	 	var multiplicadorInicial = fatorial - 1
+	 	
+	 	for(var i = multiplicadoInicial; i > 1; i--){
+	 		resultado = resultado * i;
+	 	}
+	 	
+	 	console.log(resultado)
+	 	
+	\end{lstlisting}
+	
+	\subsection{Do ... While}
+	
+	Ao contrário do while e do for, o dowhile verifica a condição apenas no final da função. A sintaxe do dowhile no JavaScript é a listada abaixo:
+	\begin{lstlisting}
+	do
+		instrucao
+	while(condicao == true)
+	
+	//-------EXEMPLO-------
+	//O programa abaixo conta de 1 a 100
+	var i = 0;
+	do
+		i++
+		console.log(contador)
+	while(i<100)
+	
+	\end{lstlisting}
+	
+	Caso o código acima fosse executado com o while, o programa contaria apenas de 1 a 99, já que a checagem no início impediria o programa de fazer mais uma iteração.
+	
+	 
+	
 
 
 
