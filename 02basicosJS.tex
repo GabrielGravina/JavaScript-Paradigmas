@@ -7,35 +7,34 @@
 
 \chapter{ Conceitos b\'{a}sicos da Linguagem JavaScript}
 
-Os livros b\'{a}sicos para recomendados o estudo da Linguagem JavaScript s\~{a}o: \cite{Flanagan2020}, \cite{powers2015javascript} entre outros.
-
 Neste cap\'{\i}tulo \'{e} serão apresentados os principais conceitos da linguagem JavaScript, sua estrutura léxica, operadores, laços de repetição entre outros tópicos.
+Os livros b\'{a}sicos e recomendados o estudo da Linguagem JavaScript s\~{a}o: \cite{flanagan2020javascript}, \cite{powers2015javascript} entre outros.
 
 
 \section{Estrutura Léxica}
-A linguagem JavaScript é feita utilizando o set de caractéres Unicode, que dá suporte a praticamente todas as linguagens utilizadas
-atualmente no mundo. É uma linguagem case sensitive, ou seja, os nomes de variáveis, funções e outros identificadores devem ser sempre utilizados de maneira consistente, ao contrário do que acontece no html, por exemplo. %Necessário melhorar +/-
-Além disso, o JavaScript ignora os espaços e as quebras de linhas (com algumas exceções) que aparecem nos programas. Isso permite que os programas sejam identados de maneira que façam o código ser legível e fácil de entender.
-Falando em tornar o código legível, os comentários em JavaScript podem ser feitos de duas formas. Uma delas são os comentários de uma só linha, que utilizam "//" e a outra são os comentários de múltiplas linhas, que ignorarão tudo que está dentro dos caracteres.
-Exemplo:
+A linguagem JavaScript é feita utilizando o set de caracteres Unicode, que dá suporte a praticamente todas as linguagens utilizadas
+atualmente no mundo. Essa é uma linguagem case sensitive, ou seja, os nomes de variáveis, funções e outros identificadores devem ser sempre utilizados de maneira consistente, ao contrário do que acontece no html, por exemplo. %Necessário melhorar +/-
+Além disso, o JavaScript ignora os espaços e as quebras de linha, com algumas exceções. Isso permite que os programas sejam identados de maneira que façam o código ser legível e fácil de entender.
+Falando em tornar o código legível, os comentários em JavaScript podem ser feitos de duas formas: uma delas são os comentários de uma só linha, que utilizam "//" e a outra são os comentários de múltiplas linhas, que ignorarão tudo que está dentro dos caracteres.
+Observe o exemplo abaixo:
 \newline
 \begin{lstlisting}[language=JavaScript]
 /*  Explicacao do codigo
 	O codigo abaixo realiza... */
 var helloWorld = function(){
-console.log('Hello World!');
+	console.log('Hello World!');
 }
 helloWorld();
 \end{lstlisting}
-No JavaScript o uso de vírgulas é opcional.
+*No JavaScript o uso de vírgulas é opcional.
  
 
 
    \begin{figure}[H]
     \begin{center}
         \caption{Melhores Livros} \label{livros}
-        \includegraphics[width=6cm]{2021} \includegraphics[width=6cm]{2020a}\\
-                \includegraphics[width=6cm]{2020b} \includegraphics[width=6cm]{2018}\\
+        \includegraphics[width=6cm]{2021} 
+                \includegraphics[width=6cm]{2020b}
         {\tiny \sf Fonte: O autor }
     \end{center}
    \end{figure} 
@@ -56,11 +55,12 @@ No JavaScript o uso de vírgulas é opcional.
     //Menor que, maior que, menor ou igual que, maior ou igual que
     <, >, <=, >=
     \end{lstlisting}
-    \section{Vari\'{a}veis e constantes}
+    \section{Vari\'{a}veis e Constantes}
     %%%%%%%%=================================
-    Com base no livro\cite{flanagan2020javascript}, uma variável é, de forma resumida, um nome simbólico para um valor armazenado no computador. Quando chamamos uma variável, estamos acessando o valor guardado por ela. \newline
-    Na linguagem JavaScript, existem dois tipos de variáveis: as primitivas e as de objeto. 
-    Para se declarar uma variável no JavaScript é necessário utilizar a palavra reservada "var" seguida do nome da variável. Abaixo encontram-se exemplos da declaração de variáveis no JavaScript.
+    Com base no livro\cite{flanagan2020javascript}, uma variável é, de forma resumida, um nome simbólico para um valor armazenado no computador. Quando chamamos uma variável, estamos acessando o valor guardado por ela. 
+   	\par Na linguagem JavaScript, existem dois tipos de variáveis: as primitivas e as de objeto. 
+    Para se declarar uma no JavaScript é necessário utilizar a palavra reservada "var" seguida de seu nome. Abaixo encontram-se exemplos da declaração de variáveis no JavaScript:
+    \newline
     
     \begin{lstlisting}
     //E possivel declarar uma variavel vazia
@@ -80,14 +80,15 @@ No JavaScript o uso de vírgulas é opcional.
     \subsection{Tipos Primitivos}
     
 	Os tipos primitivos do JS incluem números, strings de textos e valores booleanos (true e false).
-	Os tipos especiais null e undefined são valores primitivos, porém não são números, strings ou booleanos. Cada um é considerado membro de um tipo especial.  
+	Além disso, existem também os tipos especiais "null" e "undefined", que são valores primitivos, porém não são números, strings ou booleanos. Nesse sentido, cada um é considerado membro de um tipo especial.  
 	\subsubsection{Números}
 	%TALVEZ Desconsiderar essa subsection
-	Uma distinção da linguagem JavaScript que é incomum em outras línguas é que não há distinção entre inteiros e floats, sendo todos os números representados como floats. 
-	A linguagem armazena os números utilizando o formato de floats de 64 bits, e pode armazenar números grandes com precisão.
+	Uma fator da linguagem JavaScript que é incomum em outras línguas é que não há distinção entre inteiros e floats, sendo todos os números representados como floats. 
+	A linguagem armazena os números utilizando o formato de floats de 64 bits, podendo armazenar números grandes com precisão considerável.
 	
 	\subsubsection{Strings}
-	De acordo com \cite{flanagan2020javascript}, uma string é uma sequencia imutável de valores de 16 bits, onde cada um representa geralmente um caractere Unicode. O tamanho da string dependerá de quantos desses valores a string contém. Para incluir uma string num programa, basta colocar aspas (simples ou duplas). Exemplo:
+	De acordo com \cite{flanagan2020javascript}, uma string é uma sequência imutável de valores de 16 bits, onde cada um representa geralmente um caractere Unicode. O tamanho da string dependerá de quantos desses valores ela contém. Para incluir uma string num programa, basta colocar aspas (simples ou duplas). Por exemplo:
+	\newline
 	
 	\begin{lstlisting}
 	//E uma string vazia
@@ -110,7 +111,8 @@ No JavaScript o uso de vírgulas é opcional.
 	\end{lstlisting}
 	
 	\subsubsection{Booleanos}
-	Conforme \cite{powers2015javascript}, um valor booleano é um valor que representa verdade ou falsidade, e só há dois possíveis valores para um booleano. No JavaScript, as palavras reservadas para os booleanos são "true" e "false", e são geralmenteo resultado de uma comparação. Exemplo:
+	Conforme \cite{powers2015javascript}, um valor booleano é um valor que representa verdade ou falsidade. Deste modo, só há dois possíveis valores para um booleano. No JavaScript, as palavras reservadas para os booleanos são "true" e "false", e são geralmente o resultado de uma comparação. Observe o exemplo:
+	\newline
 	
 	\begin{lstlisting}
 		a = 10
@@ -121,19 +123,22 @@ No JavaScript o uso de vírgulas é opcional.
 		a == 10
 		true
 	\end{lstlisting}
-	\subsubsection{Tipos especiais}
-	Consoante a \cite{flanagan2020javascript} null é uma palavra reservada que geralmente indica ausência de um valor. Se utilizarmos o comando typeof no null, veremos que será retornado "object", o que significa que null é um objeto que indica a ausência de objeto. Resumindo, pode ser utilizado para indicar que não há valor em uma variável, string ou objeto. 
+	\subsubsection{Tipos Especiais}
+	Consoante a \cite{flanagan2020javascript}, "null" é uma palavra reservada que geralmente indica ausência de um valor. Se utilizarmos o comando "typeof" no "null", veremos que será retornado "object", o que significa que "null" é algo que indica a ausência de objeto. Resumindo, pode ser utilizado para indicar que não há valor em uma variável, string ou objeto. 
 	
-	Por isso, null e undefined costumam ser definidos como um único objeto do seu tipo.
+	Por isso, "null" e "undefined" costumam ser definidos como um único objeto do seu tipo.
 	
 	
 	\subsection{Tipos de Objeto}
-	Segundo \cite{flanagan2020javascript}, qualquer valor que não seja um número, string, objeto ou null e undefined é um objeto. Um objeto é uma coleção de propriedades onde cada propriedade tem um nome e um valor.
+	Segundo \cite{flanagan2020javascript}, qualquer valor que não seja um número, string, objeto ou null e undefined é um objeto, ou seja, é uma coleção de propriedades onde cada uma tem um nome e valor.
 	
 	\subsubsection{Globais}
-	Os objetos globais são objetos que podem ser usados globalmente em todo programa escrito em JavaScript. Quando um interpretador da linguagem inicia, ele cria novos objetos globais e os dá as propriedades que o definem. 
-	Exemplos de propriedades globais são: undefined, Infinity, NaN.
-	Exemplos de funções globais: 
+	Os objetos globais são aqueles que podem ser usados em todo programa escrito em JavaScript. Quando um interpretador da linguagem inicia, ele cria novos objetos globais e os dá as propriedades que o definem. 
+	Algumas das propriedades globais existente são: undefined, Infinity, NaN.
+	Além de propriedades e funções globais, no JavaScript existem também constructor functions, como: Date(), Object() e objetos globais, como o Math e JSON.
+	
+	São exemplos de funções globais: 
+	\newline
 	\begin{lstlisting}
 	isNan()			  	//Retorna se um valor e um numero ou nao.
 	parseInt()		  //Recebe o conteudo de uma string e converte para. inteiro
@@ -142,15 +147,15 @@ No JavaScript o uso de vírgulas é opcional.
 	isFinite()		  //Verifica se um numero e finito.
 	
 	\end{lstlisting}
-	Além de propriedades e funções globais, no JavaScript existem também constructor functions,como Date(), Object() e objetos globais, como o Math e JSON.
 	
 	
 	\section{Estrutura de Controle e Funções}
 	De acordo com \cite{flanagan2020javascript}, uma estrutura de controle dita a ordem em que instruções serão execudas. Estruturas muito conhecidas em outras linguagens estão presentes também no JavaScript.
 	
 	\subsection{O comando IF}
-	O comando IF funciona para fazer com que o JavaScript execute expressões condicionalmente. Isso significa que o computador somente executará uma determinada instrução caso a condição seja verdadeira ou execurará outra caso a condição seja falsa.
-	O comando if na linguagem toma a seguinte forma:
+	O comando IF funciona para fazer com que o JavaScript execute expressões condicionalmente. Isso significa que o computador somente executará uma determinada instrução caso a condição seja verdadeira. Caso a seja falsa, o programa executará outro do bloco de código.
+	O comando IF na linguagem toma a seguinte forma:
+	\newline
 	
 	\begin{lstlisting}
 		//Sintaxe
@@ -171,7 +176,7 @@ No JavaScript o uso de vírgulas é opcional.
 	\end{lstlisting}
 	
 	É possível também utilizar IFs dentro de outros IFs, como no exemplo abaixo:
-	
+	\newline
 	\begin{lstlisting}
 	
 		if(animal == cachorro){
@@ -191,8 +196,8 @@ No JavaScript o uso de vírgulas é opcional.
 	\newline
 	
 	\subsubsection{While}
-	Os laços de repetição while tem a seguinte no JavaScript:
-	
+	Os laços de repetição "while" tem a seguinte sintaxe no JavaScript:
+	\newline
 	\begin{lstlisting}
 		while(condicao == true){
 			execute...
@@ -207,17 +212,19 @@ No JavaScript o uso de vírgulas é opcional.
 		}
 		
 	\end{lstlisting}
-	É importante que o laço while atinga em algum momento uma condição de saída. Caso contrário, o programa continuará executando indefinidamente. No exemplo abaixo, temos um programa sem condição de saída.
-	
+	É importante que o laço "while" atinga em algum momento uma condição de saída. Caso contrário, o programa continuará executando indefinidamente. No exemplo abaixo, temos um programa sem condição de saída.
+	\newline
 	\begin{lstlisting}
 		while(Bolsonaro == Horroroso){
 			console.log("O presidente e horroroso")
 		}
+		//O programa printara a mensagem acima indefinidamente
 	\end{lstlisting}
 	
 	\subsection{For}
 	
-	Geralmente, os laços que utilizam o for são mais simples de ser lido. Isso devido ao for poder executar uma variável inicial, testá-la e incrementála em uma só linha. Na linguagem, o laço for funciona com a seguinte sintaxe:
+	Geralmente, os laços que utilizam o "for" são mais simples de serem lido. Isso devido ao fato de poderem executar uma variável inicial, testá-la e incrementála em uma única linha. Na linguagem, o laço for funciona com a seguinte sintaxe:
+	\newline
 	\begin{lstlisting}
 		for(inicia variavel; testa condicao; incrementa){
 			realiza instrucao
@@ -239,7 +246,8 @@ No JavaScript o uso de vírgulas é opcional.
 	
 	\subsection{Do ... While}
 	
-	Ao contrário do while e do for, o dowhile verifica a condição apenas no final da função. A sintaxe do dowhile no JavaScript é a listada abaixo:
+	Ao contrário do "while" e do for, o "dowhile" verifica a condição apenas no final da função. A sintaxe do "dowhile" no JavaScript é a listada abaixo:
+	\newline
 	\begin{lstlisting}
 	do
 		instrucao
@@ -255,7 +263,7 @@ No JavaScript o uso de vírgulas é opcional.
 	
 	\end{lstlisting}
 	
-	Caso o código acima fosse executado com o while, o programa contaria apenas de 1 a 99, já que a checagem no início impediria o programa de fazer mais uma iteração.
+	Caso o código acima fosse executado com o "while", o programa contaria apenas de 1 a 99, já que a checagem no início impediria o programa de fazer mais uma iteração.
 	
 	 
 	
