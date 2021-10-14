@@ -9,7 +9,7 @@
 
 	\section{Módulos}
 	Para tornar o código extensível, reutilizável e acessível, é interessante organizá-lo em classes. Porém, no JavaScript as classes não são o único tipo de código modular. Geralmente, um módulo é um único arquivo de JavaScript, e qualquer pedaço escrito na linguagem pode ser um módulo.
-	Para acessar um módulo primeiro temos que exportá-lo, e isso é feito com a palavra "export". Abaixo, temos um exemplo de um método.
+	Para acessar um módulo primeiro temos que exportá-lo, e isso é feito com a palavra "export". Abaixo, temos um exemplo de um método. \newline \newline
 	
 	\begin{lstlisting}
 	export const nome = 'triangulo'
@@ -29,11 +29,11 @@
    %%%%%%%%======================
     \section{Classes e Objetos}
     %%%%%%%%======================
-De acordo com \cite{flanagan2020javascript}, objetos são o tipo de dados fundamentais do JavaScript. Qualquer valor que não seja um tipo "true", "false", "null" ou "undefined", é um objeto. Isso nada mais é do que um valor composto que é constituído de múltiplos valores. Sendo assim, um objeto permite armazenar e buscá-los pelo nome. Na linguagem, os objetos são dinâmicos, o que significa que propriedades podem ser adicionadas ou removidas. 
+De acordo com \cite{flanagan2020javascript}, objetos são o tipo de dados fundamentais do JavaScript. Qualquer valor que não seja um tipo "true", "false", "null" ou "undefined", é um objeto. Isso nada mais é do que um valor composto que é constituído de múltiplos valores. Sendo assim, um objeto permite seu armazenamento e sua busca pelo nome. Na linguagem, os objetos são dinâmicos, o que significa que propriedades podem ser adicionadas ou removidas. 
 
 
 \subsection{Listas}
-Listas são um conjunto de dados e características armazenados dentro de uma variável. Os conteúdos de uma lista podem ser acessados através do index dos elementos. Abaixo estão alguns exemplos de listas: \newline
+Listas são um conjunto de dados e características armazenados dentro de uma variável. Os conteúdos de uma lista podem ser acessados através do index dos elementos. Abaixo estão alguns exemplos de como as linstas funcionam no JavaScript: \newline \newline
 
 \begin{lstlisting}
 //Cria uma lista com esses elementos
@@ -42,7 +42,8 @@ let Alimentos = ['Banana', 'Laranja', 'Melancia', 'Mexirica']
 console.log(Alimentos[1])  
 \end{lstlisting}
 
-Ambos os objetos e as listas são tipos de dados que podem ser alterados e utilizados para armazenar vários de valores. Porém, diferente de um objeto, uma lista serve apenas como um meio de armazenar listas dados em uma única variável. Além disso, objetos servem para representar algo que pode ser definido junto à suas características. Por exemplo: um ser humano pode ter seu nome, sua idade, e além disso pode ter seus comportamentos e também herdar características de outros animais, como mamíferos. Já o conceito de herança e polimorfismo não seria possível dentro de uma lista.
+Ambos os objetos e as listas são tipos de dados que podem ser alterados e utilizados para armazenar vários valores. Os objetos servem para representar algo que pode ser definido ujunto à suas características. Por exemplo: um ser humano pode ter seu nomee idade e, além disso, seus comportamentos herdados de seus pais. A abstração do que é um ser humano é feita utilizando uma classe, que funcionará como um molde para o objeto criado. \newline
+Diferente de um objeto, uma lista serve apenas como um meio de armazenar dados em uma única variável. Nesse sentido, os conceitos da orientação a objeto, como herança e polimorfismo, não seriam possíveis de serem implementados dentro de uma lista.
 
 \subsection{Propriedades}
 	Uma propriedade tem nome e valor, e seu nome pode ser uma string porém não pode existir um objeto que tenha mais de uma propriedade com mesmo nome. Os valores das propriedades podem ser quaisquer que existam dentro da linguagem. \newline
@@ -54,9 +55,9 @@ Ambos os objetos e as listas são tipos de dados que podem ser alterados e utili
 	"enumerable" diz se o nome da propriedade é retornado por um for/in loop. Se verdadeiro, a propriedade aparece durante a enumeração das propriedades do objeto correspondente. 
 	"configurable" especifica se a propriedade pode ser deletada ou se seus atributos podem ser alterados.
 \subsection{Criando Objetos}
-	A linguagem JavaScript apresenta várias formas de criar um objeto, e uma forma simples e fácil de criá-los é inserindo um literal de objeto. 
+	A linguagem JavaScript apresenta várias formas de criar um objeto, e uma forma simples e fácil de criá-los é inserindo um literal de objeto. Essa é uma forma extremamente prática e intuitiva, o que torna a programação orientada a objetos na linguagem muito mais simples. \newline
 
-	Um literal de objeto contém a propriedad e o seu valor, seguido de vírgulas. Abaixo, um exemplo de um literal de objeto: \newline 
+	Um literal de objeto contém a propriedad e o seu valor, seguido de vírgulas. Abaixo, um exemplo de um literal de objeto: \newline \newline
    \begin{lstlisting}
     var objeto = {
     	primeiraPropriedade: "Caracteristica 1",
