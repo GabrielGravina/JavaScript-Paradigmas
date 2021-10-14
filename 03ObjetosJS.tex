@@ -9,10 +9,28 @@
 
 	\section{Módulos}
 	Para tornar o código extensível, reutilizável e acessível, é interessante organizá-lo em classes. Porém, no JavaScript as classes não são o único tipo de código modular. Geralmente, um módulo é um único arquivo de JavaScript, e qualquer pedaço escrito na linguagem pode ser um módulo.
+	Para acessar um módulo primeiro temos que exportá-lo, e isso é feito com a palavra "export". Abaixo, temos um exemplo de um método.
+	
+	\begin{lstlisting}
+	export const nome = 'triangulo'
+	
+	export function desenha(forma ,tamanho, x, y, cor)
+		forma.fillStyle = cor;
+		forma.fillTriangulo(x, y, tamanho)
+		
+		return {
+			tamanho: tamanho,
+			x: x,
+			y: y,
+			cor:cor
+		};
+	}
+	\end{lstlisting}
    %%%%%%%%======================
     \section{Classes e Objetos}
     %%%%%%%%======================
 De acordo com \cite{flanagan2020javascript}, objetos são o tipo de dados fundamentais do JavaScript. Qualquer valor que não seja um tipo "true", "false", "null" ou "undefined", é um objeto. Isso nada mais é do que um valor composto que é constituído de múltiplos valores. Sendo assim, um objeto permite armazenar e buscá-los pelo nome. Na linguagem, os objetos são dinâmicos, o que significa que propriedades podem ser adicionadas ou removidas. 
+
 
 \subsection{Listas}
 Listas são um conjunto de dados e características armazenados dentro de uma variável. Os conteúdos de uma lista podem ser acessados através do index dos elementos. Abaixo estão alguns exemplos de listas: \newline
@@ -60,7 +78,8 @@ Ambos os objetos e as listas são tipos de dados que podem ser alterados e utili
 	
 	\subsection{Lendo e adicionando propriedades}
 	Para obter valores de objetos utilizamos o ponto (.) ou colchetes ([]). O exemplo abaixo adiciona propriedades a um objeto chamado pessoa, lê e as coloca em variáveis.
-	
+	\newline
+	\newline
 	\begin{lstlisting}
 	
 	var pessoa = new Object()  //Cria um objeto pessoa vazio
@@ -74,15 +93,50 @@ Ambos os objetos e as listas são tipos de dados que podem ser alterados e utili
 
 	console.log(pessoa["nome"]) //E o mesmo que o codigo da linha 7
 	\end{lstlisting}
+	\subsection{Deletando Propriedades}
+	O operador "delete" remove uma propriedade de um objeto. Isso significa que se um objeto tem uma propriedade, o seu conteúdo não será deletado, mas sim a propriedade em si. O exemplo abaixo ilustra o que aconteceria ao apagar uma propriedade de um objeto existente: \newline
+	\newline
+	\begin{lstlisting}
+	//Cria um novo objeto chamado pessoa
+	var pessoa = new Object()
 	
+	//define a propriedade "nome" como sendo "Lucas"
+	pessoa.nome = "Lucas"
+	//define a propriedade "idade" valendo 18
+	pessoa.idade = 18
+	//define  a profissao
+	pessoa.profissao = "Engenheiro"
+	//define o cpf
+	pessoa.cpf = "123.456.789-00"
+	
+	//printa a propriedade cpf do objeto pessoa
+	console.log(pessoa.cpf) 
+	//deleta a propriedade cpf do objeto pessoa
+	delete pessoa.cpf
+	//printa a propriedade "cpf" de pessoa, porem, como essa propriedade foi deletada, o console ira retornar "undefined"
+	console.log(pessoa.cpf) 
+	\end{lstlisting}
    %%%%%%%%======================
 	
-
+	\subsection{Prototype}
+	Como abordado por \cite{flanagan2020javascript}, uma classe é um conjunto de objetos que herdam propriedades do mesmo objeto prototype. O objeto prototype é herdado por todo objeto criado, e todas as classes herdam dele.
+	
    %%%%%%%%======================
     \section{Heran\c{c}a}
     %%%%%%%%======================
-	Um dos conceitos mais importantes da programação orientada a objetos é a Herança. Ela serve para que um objeto consiga herdar características de um objeto mãe. Isso permite que o código não necessite de ser reescrito
+	Um dos conceitos mais importantes da programação orientada a objetos é a Herança. Ela serve para que um objeto consiga herdar características de um objeto mãe. Isso permite que o código não necessite de ser reescrito. Na linguagem, cada objeto tem um conjunto de propriedades próprias, e elas também herdam propriedades de seu objeto prototype. No exemplo abaixo, temos o exemplo de uma classe "Carro" que herda da classe "Veiculo": \newline
+	\newline
+	\begin{lstlisting}
+	class Carro extends Veiculo {
+		rodas = 4;
+		cor = "Vermelho";
+	}
+	\end{lstlisting}
+	
+	\section{Encapsulamento}	
+	Por definição, o encapsulamento é o processo de esconder dados. Isso acontece porque nem sempre é seguro ou interessante permitir que determinados dados sejam acessados por qualquer um dentro do programa, e por isso costumamos separar a implementação através de uma interface. Basicamente, o processo de encapsulamento traz uma camada de segurança e confiabilidade ao código. No JavaScript é permitido utilizar variáveis privadas para permitir o encapsulamento. A linguagem permite a utilização de getters e setters que não podem ser deletados.
 
+	
    %%%%%%%%======================
-    \section{Estudo de Caso: }
+    
     %%%%%%%%====================== 
