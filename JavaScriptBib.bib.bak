@@ -7,4 +7,12 @@
  address = {Sebastopol, CA},
  isbn = {1491952024}
  }
+@Book{powers2015javascript,
+ author = {Powers, Shelley},
+ title = {JavaScript cookbook : [programming the web},
+ publisher = {O'Reilly Media},
+ year = {2015},
+ address = {Sebastopol, CA},
+ isbn = {9781491901885}
+ }
 @Comment{jabref-meta: databaseType:bibtex;}

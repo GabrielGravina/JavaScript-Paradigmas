@@ -7,30 +7,81 @@
 \chapter{ Programa\c{c}\~{a}o Orientada a Objetos com JavaScript}
 
 
-
+	\section{Módulos}
+	Para tornar o código extensível, reutilizável e acessível, é interessante organizá-lo em classes. Porém, no JavaScript as classes não são o único tipo de código modular. Geralmente, um módulo é um único arquivo de JavaScript, e qualquer pedaço escrito na linguagem pode ser um módulo.
    %%%%%%%%======================
     \section{Classes e Objetos}
     %%%%%%%%======================
-De acordo com \cite{flanagan2020javascript}, objetos são o tipo de dados fundamentais do JavaScript. Um objeto nada mais é do que um valor composto que é constituído de múltiplos valores. Sendo assim, um objeto permite armazenar e buscá-los pelo nome.
+De acordo com \cite{flanagan2020javascript}, objetos são o tipo de dados fundamentais do JavaScript. Qualquer valor que não seja um tipo "true", "false", "null" ou "undefined", é um objeto. Isso nada mais é do que um valor composto que é constituído de múltiplos valores. Sendo assim, um objeto permite armazenar e buscá-los pelo nome. Na linguagem, os objetos são dinâmicos, o que significa que propriedades podem ser adicionadas ou removidas. 
 
+\subsection{Listas}
+Listas são um conjunto de dados e características armazenados dentro de uma variável. Os conteúdos de uma lista podem ser acessados através do index dos elementos. Abaixo estão alguns exemplos de listas: \newline
+
+\begin{lstlisting}
+//Cria uma lista com esses elementos
+let Alimentos = ['Banana', 'Laranja', 'Melancia', 'Mexirica']  
+//imprime o segundo elemento da lista de alimentos (Laranja) 
+console.log(Alimentos[1])  
+\end{lstlisting}
+
+Ambos os objetos e as listas são tipos de dados que podem ser alterados e utilizados para armazenar vários de valores. Porém, diferente de um objeto, uma lista serve apenas como um meio de armazenar listas dados em uma única variável. Além disso, objetos servem para representar algo que pode ser definido junto à suas características. Por exemplo: um ser humano pode ter seu nome, sua idade, e além disso pode ter seus comportamentos e também herdar características de outros animais, como mamíferos. Já o conceito de herança e polimorfismo não seria possível dentro de uma lista.
+
+\subsection{Propriedades}
+	Uma propriedade tem nome e valor, e seu nome pode ser uma string porém não pode existir um objeto que tenha mais de uma propriedade com mesmo nome. Os valores das propriedades podem ser quaisquer que existam dentro da linguagem. \newline
+	Além de nome e valor, cada propriedade tem valores associados que chamados de atributos de propriedades. 
+	
+	\subsubsection{Atributos}
+	Segundo \cite{flanagan2020javascript}, o JavaScript apresenta os seguintes atributos de propriedades:
+	"writable" diz se o valor da propriedade pode ser atribuido. Caso seja falso, o valor da propriedade não pode ser alterado.
+	"enumerable" diz se o nome da propriedade é retornado por um for/in loop. Se verdadeiro, a propriedade aparece durante a enumeração das propriedades do objeto correspondente. 
+	"configurable" especifica se a propriedade pode ser deletada ou se seus atributos podem ser alterados.
+\subsection{Criando Objetos}
+	A linguagem JavaScript apresenta várias formas de criar um objeto, e uma forma simples e fácil de criá-los é inserindo um literal de objeto. 
+
+	Um literal de objeto contém a propriedad e o seu valor, seguido de vírgulas. Abaixo, um exemplo de um literal de objeto: \newline 
    \begin{lstlisting}
-    class NomeClasse:
-
-    def metodo1:
-
-    def Metodo2:
-
+    var objeto = {
+    	primeiraPropriedade: "Caracteristica 1",
+    	segundaPropriedade: 101,
+    	terceiraPropriedade: false,
+    	data: {
+    		dia: 12,
+    		ano: 2003
+    	}
+    
+    }
     \end{lstlisting}
 
-   %%%%%%%%======================
-    \section{Operadores ou M\'{e}todos}
-    %%%%%%%%======================
+	Além disso, há também o operador "new", que cria e inicializa um objeto. Para isso, a palavra reservada "new" vem seguida de uma chamada de função. Essa função é chamada de função construtora e tem como objetivo a inicialização do novo objeto.
+	
+	\begin{lstlisting}
+		var objeto = new Object() //Cria um objeto vazio {}
+	\end{lstlisting}
+	
+	\subsection{Lendo e adicionando propriedades}
+	Para obter valores de objetos utilizamos o ponto (.) ou colchetes ([]). O exemplo abaixo adiciona propriedades a um objeto chamado pessoa, lê e as coloca em variáveis.
+	
+	\begin{lstlisting}
+	
+	var pessoa = new Object()  //Cria um objeto pessoa vazio
+	pessoa.nome = "Marcelo"
+	pessoa.idade = 8
+	pessoa.sexo = "M"
+	
+	console.log(pessoa.nome)	//Mostra o valor da propriedade nome de pessoa
+	console.log(pessoa.idade)	//Mostra o valor da propriedade idade de pessoa
+	console.log(pessoa.sexo) 	//Mostra o valor da propriedade sexo de pessoa
 
+	console.log(pessoa["nome"]) //E o mesmo que o codigo da linha 7
+	\end{lstlisting}
+	
+   %%%%%%%%======================
+	
 
    %%%%%%%%======================
     \section{Heran\c{c}a}
     %%%%%%%%======================
-
+	Um dos conceitos mais importantes da programação orientada a objetos é a Herança. Ela serve para que um objeto consiga herdar características de um objeto mãe. Isso permite que o código não necessite de ser reescrito
 
    %%%%%%%%======================
     \section{Estudo de Caso: }
