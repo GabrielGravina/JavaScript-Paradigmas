@@ -35,6 +35,17 @@
 \contentsline {subsection}{\numberline {3.2.6}Prototype}{18}{subsection.3.2.6}%
 \contentsline {section}{\numberline {3.3}Heran\c {c}a}{18}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Encapsulamento}{18}{section.3.4}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliografia}}{19}{chapter*.2}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{21}{section*.3}%
+\contentsline {chapter}{\numberline {4} Aplica\c {c}\~{o}es da Linguagem JavaScript}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Pilha Implementação}{19}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Prints Pilha}{20}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Árvore de Busca Binária}{20}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}BST Prints}{26}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Calculadora}{26}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Prints Calculadora}{30}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Implementação do QuickSort}{33}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Prints QuickSort}{35}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}BubbleSort}{35}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}BubbleSort Prints}{36}{subsection.4.5.1}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliografia}}{37}{chapter*.2}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{39}{section*.3}%
 \contentsfinish 

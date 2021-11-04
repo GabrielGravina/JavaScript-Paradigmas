@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.16)  14 OCT 2021 12:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.16)  4 NOV 2021 00:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1240,7 +1240,7 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
  [4]
 (./01introducJS.tex
 Cap\'{\i }tulo 1.
-<Pictures/capitulo01.jpg, id=122, 1204.5pt x 469.755pt>
+<Pictures/capitulo01.jpg, id=152, 1204.5pt x 469.755pt>
 File: Pictures/capitulo01.jpg Graphic file (type jpg)
 <use Pictures/capitulo01.jpg>
 Package pdftex.def Info: Pictures/capitulo01.jpg  used on input line 9.
@@ -1273,7 +1273,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 ) (./02basicosJS.tex
 [6]
 Cap\'{\i }tulo 2.
-<Pictures/capitulo.jpg, id=140, 903.375pt x 352.31625pt>
+<Pictures/capitulo.jpg, id=170, 903.375pt x 352.31625pt>
 File: Pictures/capitulo.jpg Graphic file (type jpg)
 <use Pictures/capitulo.jpg>
 Package pdftex.def Info: Pictures/capitulo.jpg  used on input line 8.
@@ -1285,12 +1285,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--21
 
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 24.
-<Pictures/2021.jpg, id=143, 382.42876pt x 500.87125pt>
+<Pictures/2021.jpg, id=173, 382.42876pt x 500.87125pt>
 File: Pictures/2021.jpg Graphic file (type jpg)
 <use Pictures/2021.jpg>
 Package pdftex.def Info: Pictures/2021.jpg  used on input line 36.
 (pdftex.def)             Requested size: 170.71652pt x 223.5863pt.
-<Pictures/2020b.jpg, id=144, 1958.31625pt x 2569.6pt>
+<Pictures/2020b.jpg, id=174, 1958.31625pt x 2569.6pt>
 File: Pictures/2020b.jpg Graphic file (type jpg)
 <use Pictures/2020b.jpg>
 Package pdftex.def Info: Pictures/2020b.jpg  used on input line 37.
@@ -1433,23 +1433,182 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
-) (./GabrielGravina-JavaScript.bbl (./GabrielGravina-JavaScript.brf)
+) (./04aplicJS.tex [18]
+Cap\'{\i }tulo 4.
+File: Pictures/capitulo.jpg Graphic file (type jpg)
+<use Pictures/capitulo.jpg>
+Package pdftex.def Info: Pictures/capitulo.jpg  used on input line 8.
+(pdftex.def)             Requested size: 597.50787pt x 233.04015pt.
+<../../../../Desktop/PilhaCode.png, id=474, 218.31563pt x 204.01219pt>
+File: ../../../../Desktop/PilhaCode.png Graphic file (type png)
+<use ../../../../Desktop/PilhaCode.png>
+Package pdftex.def Info: ../../../../Desktop/PilhaCode.png  used on input line 
+46.
+(pdftex.def)             Requested size: 298.75264pt x 279.1806pt.
+[19
+
+]
+<../PraticaJS/Stack/Stack.png, id=499, 625.58719pt x 135.50626pt>
+File: ../PraticaJS/Stack/Stack.png Graphic file (type png)
+<use ../PraticaJS/Stack/Stack.png>
+Package pdftex.def Info: ../PraticaJS/Stack/Stack.png  used on input line 49.
+(pdftex.def)             Requested size: 426.79135pt x 92.44904pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 49--50
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+[]\T1/ptm/m/n/10.95 (+20) Código re-ti-rado de: [][]$\T1/cmtt/m/n/10.95 https :
+ / / www . geeksforgeeks . org /
+ []
+
+[20 <../../../../Desktop/PilhaCode.png (PNG copy)> <../PraticaJS/Stack/Stack.pn
+g (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (14.5pt): 
+Make it at least 14.57007pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+<../../../../Desktop/BSTexec.png, id=788, 520.94624pt x 721.94719pt>
+File: ../../../../Desktop/BSTexec.png Graphic file (type png)
+<use ../../../../Desktop/BSTexec.png>
+Package pdftex.def Info: ../../../../Desktop/BSTexec.png  used on input line 37
+0.
+(pdftex.def)             Requested size: 384.1096pt x 532.31577pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+[26 <../../../../Desktop/BSTexec.png (PNG copy)>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+<../../../../Desktop/CalcCode1.png, id=980, 478.78876pt x 709.90219pt>
+File: ../../../../Desktop/CalcCode1.png Graphic file (type png)
+<use ../../../../Desktop/CalcCode1.png>
+Package pdftex.def Info: ../../../../Desktop/CalcCode1.png  used on input line 
+508.
+(pdftex.def)             Requested size: 384.1096pt x 569.5257pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+<../../../../Desktop/CalcCode2.png, id=990, 433.62pt x 563.10374pt>
+File: ../../../../Desktop/CalcCode2.png Graphic file (type png)
+<use ../../../../Desktop/CalcCode2.png>
+Package pdftex.def Info: ../../../../Desktop/CalcCode2.png  used on input line 
+511.
+(pdftex.def)             Requested size: 384.1096pt x 498.83226pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 <../../../../Desktop/CalcCode1.png (PNG copy)>]
+<../PraticaJS/Calculadora/Calc01.png, id=995, 299.61937pt x 465.99094pt>
+File: ../PraticaJS/Calculadora/Calc01.png Graphic file (type png)
+<use ../PraticaJS/Calculadora/Calc01.png>
+Package pdftex.def Info: ../PraticaJS/Calculadora/Calc01.png  used on input lin
+e 516.
+(pdftex.def)             Requested size: 384.1096pt x 597.44049pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31 <../../../../Desktop/CalcCode2.png (PNG copy)>]
+<../../../../Desktop/Calc02.png, id=1001, 303.38344pt x 469.00218pt>
+File: ../../../../Desktop/Calc02.png Graphic file (type png)
+<use ../../../../Desktop/Calc02.png>
+Package pdftex.def Info: ../../../../Desktop/Calc02.png  used on input line 519
+.
+(pdftex.def)             Requested size: 384.1096pt x 593.80844pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32 <../PraticaJS/Calculadora/Calc01.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 524--526
+
+ []
+
+[33 <../../../../Desktop/Calc02.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 580--582
+\T1/ptm/m/n/10.95 (+20) O có-digo foi re-ti-rado de: [][]$\T1/cmtt/m/n/10.95 ht
+tps : / / javascript . plainenglish . io /
+ []
+
+[34]
+<../../../../Desktop/QuickSortCode.png, id=1069, 911.65594pt x 634.62094pt>
+File: ../../../../Desktop/QuickSortCode.png Graphic file (type png)
+<use ../../../../Desktop/QuickSortCode.png>
+Package pdftex.def Info: ../../../../Desktop/QuickSortCode.png  used on input l
+ine 586.
+(pdftex.def)             Requested size: 298.75264pt x 207.97302pt.
+<../PraticaJS/QuickSort/QuickSort-print.png, id=1070, 615.80063pt x 203.25937pt
+>
+File: ../PraticaJS/QuickSort/QuickSort-print.png Graphic file (type png)
+<use ../PraticaJS/QuickSort/QuickSort-print.png>
+Package pdftex.def Info: ../PraticaJS/QuickSort/QuickSort-print.png  used on in
+put line 589.
+(pdftex.def)             Requested size: 384.1096pt x 126.78557pt.
+
+Overfull \hbox (23.29076pt too wide) in paragraph at lines 588--590
+[]\T1/ptm/m/n/10.95 (-20) Resultado: [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--594
+[]\T1/ptm/m/n/10.95 (+20) Retirado de: [][]$\T1/cmtt/m/n/10.95 https : / / www 
+. delftstack . com / howto / javascript /
+ []
+
+[35 <../../../../Desktop/QuickSortCode.png (PNG copy)> <../PraticaJS/QuickSort/
+QuickSort-print.png (PNG copy)>]
+<../../../../Desktop/BubbleSortCode.png, id=1098, 384.6872pt x 249.93375pt>
+File: ../../../../Desktop/BubbleSortCode.png Graphic file (type png)
+<use ../../../../Desktop/BubbleSortCode.png>
+Package pdftex.def Info: ../../../../Desktop/BubbleSortCode.png  used on input 
+line 616.
+(pdftex.def)             Requested size: 384.1096pt x 249.57465pt.
+<../../../../Desktop/BubbleResult.png, id=1099, 611.28375pt x 41.4047pt>
+File: ../../../../Desktop/BubbleResult.png Graphic file (type png)
+<use ../../../../Desktop/BubbleResult.png>
+Package pdftex.def Info: ../../../../Desktop/BubbleResult.png  used on input li
+ne 619.
+(pdftex.def)             Requested size: 384.1096pt x 26.01685pt.
+) (./GabrielGravina-JavaScript.bbl
+(./GabrielGravina-JavaScript.brf)
 \tf@brf=\write8
 \openout8 = `GabrielGravina-JavaScript.brf'.
 
- [18]
-<Pictures/Bibliografia.png, id=443, 578.16pt x 225.4824pt>
+ [36 <../../../../Desktop/BubbleSortCode.png (PNG copy)> <../../../../Desktop/B
+ubbleResult.png (PNG copy)>]
+<Pictures/Bibliografia.png, id=1105, 578.16pt x 225.4824pt>
 File: Pictures/Bibliografia.png Graphic file (type png)
 <use Pictures/Bibliografia.png>
 Package pdftex.def Info: Pictures/Bibliografia.png  used on input line 1.
 (pdftex.def)             Requested size: 597.50787pt x 233.04079pt.
-)
-[19
+) [37
 
- <./Pictures/Bibliografia.png>] [20
+ <./Pictures/Bibliografia.png>] [38
 
-] (./GabrielGravina-JavaScript.ind)
-(./ficha.tex) [21]
+] (./GabrielGravina-JavaScript.ind) (./ficha.tex)
+[39]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
  (./GabrielGravina-JavaScript.aux)
@@ -1461,13 +1620,13 @@ ed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
  ) 
 Here is how much of TeX's memory you used:
- 28962 strings out of 481239
- 555175 string characters out of 5920377
- 1109475 words of memory out of 5000000
- 43192 multiletter control sequences out of 15000+600000
+ 29719 strings out of 481239
+ 568654 string characters out of 5920377
+ 1221829 words of memory out of 5000000
+ 43368 multiletter control sequences out of 15000+600000
  617500 words of font info for 213 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,12n,97p,1058b,1897s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,12n,97p,1058b,1899s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-supe
@@ -1477,10 +1636,10 @@ ve/texmf-dist/fonts/type1/urw/avantgar/uagk8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on GabrielGravina-JavaScript.pdf (21 pages, 3003601 bytes).
+Output written on GabrielGravina-JavaScript.pdf (39 pages, 4013858 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
- 585 compressed objects within 6 object streams
- 291 named destinations out of 1000 (max. 500000)
- 49960 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1469 PDF objects out of 1728 (max. 8388607)
+ 1347 compressed objects within 14 object streams
+ 850 named destinations out of 1000 (max. 500000)
+ 50103 words of extra memory for PDF output out of 51595 (max. 10000000)
 
