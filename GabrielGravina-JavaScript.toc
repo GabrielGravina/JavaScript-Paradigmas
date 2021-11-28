@@ -13,12 +13,12 @@
 \contentsline {subsection}{\numberline {2.3.1}Tipos Primitivos}{9}{subsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.1.1}Números}{9}{subsubsection.2.3.1.1}%
 \contentsline {subsubsection}{\numberline {2.3.1.2}Strings}{9}{subsubsection.2.3.1.2}%
-\contentsline {subsubsection}{\numberline {2.3.1.3}Booleanos}{9}{subsubsection.2.3.1.3}%
+\contentsline {subsubsection}{\numberline {2.3.1.3}Booleanos}{10}{subsubsection.2.3.1.3}%
 \contentsline {subsubsection}{\numberline {2.3.1.4}Tipos Especiais}{10}{subsubsection.2.3.1.4}%
 \contentsline {subsection}{\numberline {2.3.2}Tipos de Objeto}{10}{subsection.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.3.2.1}Globais}{10}{subsubsection.2.3.2.1}%
 \contentsline {section}{\numberline {2.4}Estrutura de Controle e Funções}{10}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}O comando IF}{10}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.1}O comando IF}{11}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Laços de Repetição}{11}{subsection.2.4.2}%
 \contentsline {subsubsection}{\numberline {2.4.2.1}While}{11}{subsubsection.2.4.2.1}%
 \contentsline {subsection}{\numberline {2.4.3}For}{12}{subsection.2.4.3}%
@@ -37,15 +37,22 @@
 \contentsline {section}{\numberline {3.4}Encapsulamento}{18}{section.3.4}%
 \contentsline {chapter}{\numberline {4} Aplica\c {c}\~{o}es da Linguagem JavaScript}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Pilha Implementação}{19}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Prints Pilha}{20}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Árvore de Busca Binária}{20}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}BST Prints}{26}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Calculadora}{26}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Prints Calculadora}{30}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Implementação do QuickSort}{33}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Prints QuickSort}{35}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}BubbleSort}{35}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}BubbleSort Prints}{36}{subsection.4.5.1}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliografia}}{37}{chapter*.2}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{39}{section*.3}%
+\contentsline {subsection}{\numberline {4.1.1}Prints Pilha}{19}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Árvore de Busca Binária}{19}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}BST Prints}{25}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Calculadora}{25}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Prints Calculadora}{26}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Implementação do QuickSort}{26}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Prints QuickSort}{27}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Conversor de Temperatura}{27}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Conversor de Temperatura Imagens}{28}{subsection.4.5.1}%
+\contentsline {chapter}{\numberline {5}Ferramentas existentes e utilizadas}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Node JS}{35}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}NVM}{36}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Visual Studio Code}{36}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Interpretador UVW}{36}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Ambientes de Programa\c {c}\~{a}o IDE MNP}{36}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Conclus\~{o}es}{37}{chapter.6}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliografia}}{39}{chapter*.2}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{41}{section*.3}%
 \contentsfinish 

@@ -40,12 +40,14 @@ helloWorld();
    \end{figure} 
     %%%%%%%%=================================
     \section{Operadores}
+    A linguagem JavaScript tem operadores
     \begin{lstlisting}
     ++								//incremento
     --								//decremento
     !								//inverte valores em booleano
     ==								//testa equalidade
     !=								//testa inequalidade
+    !==								//testa inequalidade de forma rigorosa (mesmo tipo e valor)
     //testa por equalidade estrita, ou seja, o tipo tambem tem que ser o mesmo
     ===	
     ||								//OR
@@ -59,7 +61,7 @@ helloWorld();
     %%%%%%%%=================================
     Com base no livro\cite{flanagan2020javascript}, uma variável é, de forma resumida, um nome simbólico para um valor armazenado no computador. Quando chamamos uma variável, estamos acessando o valor guardado por ela. 
    	\par Na linguagem JavaScript, existem dois tipos de variáveis: as primitivas e as de objeto. 
-    Para se declarar uma no JavaScript é necessário utilizar a palavra reservada "var" seguida de seu nome. Abaixo encontram-se exemplos da declaração de variáveis no JavaScript:
+    Para se declarar uma no JavaScript é necessário utilizar a palavra reservada "var" ou "let" seguida de seu nome. A linguagem automaticamente detectará o tipo, sem ser necessário especificá-lo com antecedencia, o que é o caso em linguagens como C e Java. Abaixo encontram-se exemplos da declaração de variáveis no JavaScript:
     \newline
     
     \begin{lstlisting}

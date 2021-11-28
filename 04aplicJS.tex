@@ -34,10 +34,7 @@ O capítulo abaixo irá demonstrar implementações em JavaScript de aplicaçõe
 	\subsection{Prints Pilha}
 	
 	
-	\includegraphics[width=0.7\linewidth]{../../../../Desktop/PilhaCode}
-	
-	
-	\includegraphics[width=1\linewidth]{../PraticaJS/Stack/Stack}
+
 
 
     \section{Árvore de Busca Binária}
@@ -356,158 +353,80 @@ O capítulo abaixo irá demonstrar implementações em JavaScript de aplicaçõe
     \end{lstlisting}
     
     \subsection{BST Prints}
-    
-    
-    \includegraphics[width=0.9\linewidth]{../../../../Desktop/BSTexec}
+    Abaixo se encontram imagens do código e do resultado, respectivamente.
+    \begin{figure}[h]
+    	\centering
+    	\includegraphics[width=1\linewidth]{Pictures/BST_Code1}
+    	\caption{}
+    	\label{fig:bstcode1}
+    \end{figure}
+    \begin{figure}[h]
+    	\centering
+    	\includegraphics[width=1\linewidth]{Pictures/BST_Code2}
+    	\caption{}
+    	\label{fig:bstcode2}
+    \end{figure}
+    \begin{figure}[h]
+    	\centering
+    	\includegraphics[width=0.9\linewidth]{Pictures/BST_Code3}
+    	\caption{}
+    	\label{fig:bstcode3}
+    \end{figure}
+    \begin{figure}[h]
+    	\centering
+    	\includegraphics[width=0.9\linewidth]{Pictures/BST_Result}
+    	\caption{}
+    	\label{fig:bstresult}
+    \end{figure}
     
 
 
     \section{Calculadora}
     O exemplo abaixo foi feito em JavaScript com HTML e CSS e interpretado pelo navegador.
     \begin{lstlisting}
-    class Calculator {
-    constructor(previousOperandTextElement, currentOperandTextElement) {
-    this.previousOperandTextElement = previousOperandTextElement
-    this.currentOperandTextElement = currentOperandTextElement
-    this.clear()
-    }
+    var valor1, valor2, operador;
+    var readlineSync = require('readline-sync');
+    operador = readlineSync.question("Qual operacao deseja efetuar (+) (-) (*) (/)? : \n");
+    valor1 = parseFloat(readlineSync.question("Insira o primeiro numero: \n"));
+    valor2 = parseFloat(readlineSync.question("Insira o segundo numero: \n"));
     
-    clear() {
-    this.currentOperand = ''
-    this.previousOperand = ''
-    this.operation = undefined
-    }
-    
-    delete() {
-    this.currentOperand = this.currentOperand.toString().slice(0, -1)
-    }
-    
-    appendNumber(number) {
-    if (number === '.' && this.currentOperand.includes('.')) return
-    this.currentOperand = this.currentOperand.toString() + number.toString()
-    }
-    
-    chooseOperation(operation) {
-    if (this.currentOperand === '') return
-    if (this.previousOperand !== '') {
-    this.compute()
-    }
-    this.operation = operation
-    this.previousOperand = this.currentOperand
-    this.currentOperand = ''
-    }
-    
-    compute() {
-    let computation
-    const prev = parseFloat(this.previousOperand)
-    const current = parseFloat(this.currentOperand)
-    if (isNaN(prev) || isNaN(current)) return
-    switch (this.operation) {
-    case '+':
-    computation = prev + current
-    break
-    case '-':
-    computation = prev - current
-    break
-    case '*':
-    computation = prev * current
-    break
-    case '/':
-    computation = prev / current
-    break
-    default:
-    return
-    }
-    this.currentOperand = computation
-    this.operation = undefined
-    this.previousOperand = ''
-    }
-    
-    getDisplayNumber(number) {
-    const stringNumber = number.toString()
-    const integerDigits = parseFloat(stringNumber.split('.')[0])
-    const decimalDigits = stringNumber.split('.')[1]
-    let integerDisplay
-    if (isNaN(integerDigits)) {
-    integerDisplay = ''
+    function calcular(operator, value1, value2) {
+    if (operator == "+") {
+    return value1 + value2;
+    } else if
+    (operator == "-") {
+    return value1 - value2;
+    } else if
+    (operator == "*") {
+    return value1 * value2;
+    } else if
+    (operator == "/") {
+    return value1 / value2;
     } else {
-    integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
-    }
-    if (decimalDigits != null) {
-    return `${integerDisplay}.${decimalDigits}`
-    } else {
-    return integerDisplay
-    }
-    }
-    
-    updateDisplay() {
-    this.currentOperandTextElement.innerText =
-    this.getDisplayNumber(this.currentOperand)
-    if (this.operation != null) {
-    this.previousOperandTextElement.innerText =
-    `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
-    } else {
-    this.previousOperandTextElement.innerText = ''
-    }
+    throw new Error('Operacao invalida');
     }
     }
     
     
-    const numberButtons = document.querySelectorAll('[data-number]')
-    const operationButtons = document.querySelectorAll('[data-operation]')
-    const equalsButton = document.querySelector('[data-equals]')
-    const deleteButton = document.querySelector('[data-delete]')
-    const allClearButton = document.querySelector('[data-all-clear]')
-    const previousOperandTextElement = document.querySelector('[data-previous-operand]')
-    const currentOperandTextElement = document.querySelector('[data-current-operand]')
-    
-    const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
-    
-    numberButtons.forEach(button => {
-    button.addEventListener('click', () => {
-    calculator.appendNumber(button.innerText)
-    calculator.updateDisplay()
-    })
-    })
-    
-    operationButtons.forEach(button => {
-    button.addEventListener('click', () => {
-    calculator.chooseOperation(button.innerText)
-    calculator.updateDisplay()
-    })
-    })
-    
-    equalsButton.addEventListener('click', button => {
-    calculator.compute()
-    calculator.updateDisplay()
-    })
-    
-    allClearButton.addEventListener('click', button => {
-    calculator.clear()
-    calculator.updateDisplay()
-    })
-    
-    deleteButton.addEventListener('click', button => {
-    calculator.delete()
-    calculator.updateDisplay()
-    })
-    
+    console.log('O resultado e: ', calcular(operador, valor1, valor2))     
     \end{lstlisting}
     
     \subsection{Prints Calculadora}
 	
-	\includegraphics[width=0.9\linewidth]{../../../../Desktop/CalcCode1}
+	Imagens do código e do resultado, respectivamente: 
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.9\linewidth]{Pictures/CalcCode}
+		\caption{}
+		\label{fig:calccode}
+	\end{figure}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.9\linewidth]{Pictures/CalcResult}
+		\caption{}
+		\label{fig:calcresult}
+	\end{figure}
 	
-	
-	\includegraphics[width=0.9\linewidth]{../../../../Desktop/CalcCode2}
-	
-	
-	
-	
-	\includegraphics[width=0.9\linewidth]{../PraticaJS/Calculadora/Calc01}
-
-	
-	\includegraphics[width=0.9\linewidth]{../../../../Desktop/Calc02}
 
 
 
@@ -559,13 +478,6 @@ arr = quickSortBasic(arr, 0, arr.length - 1);
 console.log("Sorted array: ");
 console.log(arr);
 
-/* Output - 
-Unsorted array: 
-[ 63, 95, 63, 26, 76, 19, 65, 8, 63, 26 ]
-Sorted array: 
-[ 8, 19, 26, 26, 63, 63, 63, 65, 76, 95 ]
-[Finished in 0.1s]
-*/
 
 \end{lstlisting}
 O código foi retirado de:
@@ -573,41 +485,74 @@ O código foi retirado de:
 
 
 \subsection{Prints QuickSort}
-	Código Fonte:
-	\includegraphics[width=0.7\linewidth]{../../../../Desktop/QuickSortCode}
+	Código Fonte e imagem do resultado, respectivamente:
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{Pictures/QuickCode}
+		\caption{}
+		\label{fig:quickcode}
+	\end{figure}
 	
-	Resultado:
-	\includegraphics[width=0.9\linewidth]{../PraticaJS/QuickSort/QuickSort-print}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{Pictures/QuickResult}
+		\caption{}
+		\label{fig:quickresult}
+	\end{figure}
 	
 	
- \section{BubbleSort}
- Retirado de: \url{https://www.delftstack.com/howto/javascript/javascript-bubble-sort/}
+	
+ \section{Conversor de Temperatura}
+ O código abaixo foi feito utilizando o módulo 'prompt-sync'.
  \begin{lstlisting}
- function bubbleSort(items) {
-	 var length = items.length;  
-	 for (var i = 0; i < length; i++) { 
-		 for (var j = 0; j < (length - i - 1); j++) { 
-			 if(items[j] > items[j+1]) {
-				 var tmp = items[j]; 
-				 items[j] = items[j+1]; 
-				 items[j+1] = tmp; 
- 			}
- 		}        
- 	}
+ // TC/5 = (TF-32)/9 = (TK-273)/5
+ 
+ const prompt = require('prompt-sync')();
+ 
+ const temperatura = Number(prompt('Qual temperatura? '));
+ 
+ 
+ const escala = prompt('Qual a escala da temperatura inserida? (1: Celsius; 2: Fahrenheit; 3: Kelvin)');
+ 
+ switch(escala) {
+ case '1':
+ temperatura_fahrenheit = (temperatura/5)*9+32;
+ temperatura_kelvin = (temperatura + 273.15);
+ console.log("A temperatura: ", temperatura_kelvin, "K e ", temperatura_fahrenheit, "graus F");
+ break;
+ case '2':
+ temperatura_celsius = ((temperatura-32)/9)*5;
+ temperatura_kelvin = ((temperatura-32)/9)*5+273.15;
+ console.log("A temperatura: ", temperatura_celsius, "graus C e ", temperatura_kelvin, "K");
+ break;
+ 
+ case '3':
+ temperatura_fahrenheit = ((temperatura-273.15)/5)*9+32;
+ temperatura_celsius = (temperatura)-273.15;
+ console.log("A temperatura: ", temperatura_fahrenheit, "graus F e ", temperatura_celsius, "graus C")
+ break;
+ 
+ default:
+ console.log('Insira uma escala valida de 1 a 3.');
  }
- 
- var arr = [5, 4, 3, 2, 1]; 
- bubbleSort(arr);
- 
- console.log(arr);
  \end{lstlisting}
  
- \subsection{BubbleSort Prints}
+ \subsection{Conversor de Temperatura Imagens}
+ Código fonte e imagem do resultado:
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{Pictures/ConversorTempCode}
+	\caption{}
+	\label{fig:conversortempcode}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Pictures/ConversorTempResultado}
+	\caption{}
+	\label{fig:conversortempresultado}
+\end{figure}
 
-	\includegraphics[width=0.9\linewidth]{../../../../Desktop/BubbleSortCode}
-
-
-	\includegraphics[width=0.9\linewidth]{../../../../Desktop/BubbleResult}
+	
 	
 	
 
