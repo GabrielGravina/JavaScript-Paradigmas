@@ -40,19 +40,22 @@
 \contentsline {subsection}{\numberline {4.1.1}Prints Pilha}{19}{subsection.4.1.1}%
 \contentsline {section}{\numberline {4.2}Árvore de Busca Binária}{19}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}BST Prints}{25}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Calculadora}{25}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Prints Calculadora}{26}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Implementação do QuickSort}{26}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Prints QuickSort}{27}{subsection.4.4.1}%
-\contentsline {section}{\numberline {4.5}Conversor de Temperatura}{27}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Conversor de Temperatura Imagens}{28}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.3}Calculadora}{28}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Prints Calculadora}{29}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Implementação do QuickSort}{30}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Prints QuickSort}{31}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Conversor de Temperatura}{32}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Conversor de Temperatura Imagens}{32}{subsection.4.5.1}%
 \contentsline {chapter}{\numberline {5}Ferramentas existentes e utilizadas}{35}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Node JS}{35}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}NVM}{36}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Visual Studio Code}{36}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Interpretador UVW}{36}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Ambientes de Programa\c {c}\~{a}o IDE MNP}{36}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclus\~{o}es}{37}{chapter.6}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliografia}}{39}{chapter*.2}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{41}{section*.3}%
+\contentsline {subsection}{\numberline {5.1.1}NPM}{36}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}NVM}{36}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}IDEs}{37}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Visual Studio Code}{37}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Webstorm}{38}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Atom}{39}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}JS Fiddle}{39}{subsection.5.2.4}%
+\contentsline {chapter}{\numberline {6}Conclus\~{o}es}{41}{chapter.6}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliografia}}{43}{chapter*.2}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{45}{section*.3}%
 \contentsfinish 
