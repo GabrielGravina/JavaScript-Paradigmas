@@ -5,7 +5,6 @@ Este repositório contém o resultado do trabalho desenvolvido na disciplina de 
     div {
       display: flex; 
       align-items: center;
-      justify-content: center;
     }
   </style>
   <img src="https://user-images.githubusercontent.com/63823651/230954106-e82e5991-fd55-45d3-9f58-c0e1eadd1262.png" width="200px"/>
