@@ -1,7 +1,7 @@
 # JavaScript-Paradigmas
 <div>
-<h3>Este repositório contém o resultado do trabalho desenvolvido na disciplina de Paradigmas da Ciência da Computação, cujo objetivo foi criar um material didático sobre a linguagem de programação JavaScript. Para isso, foi utilizado o editor de texto Tex Studio.</p>
-</h3>
+<h5>Este repositório contém o resultado do trabalho desenvolvido na disciplina de Paradigmas da Ciência da Computação, cujo objetivo foi criar um material didático sobre a linguagem de programação JavaScript. Para isso, foi utilizado o editor de texto Tex Studio.</p>
+</h5>
   <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/63823651/230954106-e82e5991-fd55-45d3-9f58-c0e1eadd1262.png" width="180px"/>
   <img src="https://user-images.githubusercontent.com/63823651/230953607-d0c9ede3-9588-4011-b2ea-9b45e3da09bb.png" width="320px"/>
